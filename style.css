@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.solar-system {
+    background-image: url(./images/26663.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.sun {
+    width: 200px;
+    height:200px;
+    border-radius:50%;
+    background-image: url(https://www.pngall.com/wp-content/uploads/2016/07/Sun-PNG.png);
+    background-size: 200px;
+    position:absolute;
+    top:calc(50% - 100px);
+    left:calc(50% - 100px);
+    animation:4s earth infinite linear;
+}
+
+.earth {
+    border-radius:50%;
+    position:absolute;
+    width:100px;
+    height:100px;
+    background-image: url(https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Earth_Globe_Europe_Africa_1024x1024.png?v=1571606068);
+    background-size: 100px;
+    top:calc(50% - 85px);
+    left:calc(50% - 350px);
+    transform-origin:350px 70px;
+    animation:4s earth infinite linear;
+}
+
+  @keyframes earth {
+    from{
+      transform:rotate(0)
+    }
+    to{
+      transform:rotate(360deg)
+    }
+  }
+
